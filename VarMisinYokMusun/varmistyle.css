@@ -26,8 +26,8 @@ span {
 }
 
 .ortaalan {
-    width: 400px;
-    height: 325px;
+    width: 45%;
+    height: 100%;
     float: left;
     background-color: gainsboro;
     margin: 0 auto;
@@ -66,11 +66,11 @@ span {
     background-color: silver;
     float: left;
     border: 1px black solid;
-    margin: 2px 2px;
+    margin: 3px 4px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 .secilen {
@@ -79,17 +79,22 @@ span {
 }
 
 .oyun {
-    width: 1000px;
-    height: 500px;
+    width: 75%;
+    height: 50%;
 }
 
 #teklif {
     background-color: darksalmon;
-    width: 375px;
-    height: 30px;
+    width: 95%;
+    height: 60px;
     border: 2px black solid;
     float: left;
     margin: 2px 3px;
+}
+
+#teklif.span {
+    text-align: center;
+    font: medium;
 }
 
 .sagtaraf {

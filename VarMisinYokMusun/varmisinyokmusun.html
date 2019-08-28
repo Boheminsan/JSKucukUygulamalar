@@ -222,14 +222,27 @@
             asama++;
             kutuSayisi = 0;
             console.log('aşama ' + asama);
-            console.log(teklifHesapla());
+            var teklif = teklifHesapla(paralar, acilan);
+            var kutumdaki = document.getElementById(secilen).innerHTML;
+            var d = parakutu[kutumdaki - 1];
+            $('#teklif').html("<span> Hamdi bey'in teklifi: " + teklif + "TL</span>");
+            if (confirm('Hamdi bey\'in teklifi:' + teklif + 'TL. \n Var mısın? Yok musun?')) {
+                alert('Varım Diyor!');
+                alert('Kazandığınız ödül:' + teklif);
+                alert('Kutunuzdan çıkan ödül:' + d[1]);
+            } else {
+                $('#teklif').html('<span></span>');
+            }
+            if (acilan.length == 23) {
+                var d = parakutu[kutumdaki - 1];
+                alert('Kazandığınız ödül:' + d[1]);
+            }
+
         }
-
-
 
         function kutuAc(kutuno, idname1) {
             var d = parakutu[kutuno - 1];
-            alert(d);
+            //alert(d);
             acilan.push(d[1]);
             $('#' + idname1).prop('disabled', true);
             ustunuCiz(d[1]);
