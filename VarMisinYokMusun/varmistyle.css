@@ -1,0 +1,100 @@
+#vertical {
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: 5px solid green;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    background-color: azure;
+}
+
+.paraalan {
+    width: 115px;
+    height: 325px;
+    float: left;
+    background-color: green;
+    margin: 0px 2px;
+}
+
+.ortaalan {
+    width: 400px;
+    height: 325px;
+    float: left;
+    background-color: gainsboro;
+    margin: 0 auto;
+}
+
+.acildi {
+    background-color: gray;
+}
+
+.para {
+    height: 25px;
+    width: 96px;
+    color: black;
+    border: 1px black solid;
+    text-align: right;
+    padding-right: 16px;
+    font-weight: bold;
+}
+
+.kucuk {
+    background-color: aquamarine;
+}
+
+.orta {
+    background-color: darkgoldenrod;
+}
+
+.para.buyuk {
+    background-color: crimson;
+    color: aliceblue;
+}
+
+.kutu {
+    width: 60px;
+    height: 60px;
+    background-color: silver;
+    float: left;
+    border: 1px black solid;
+    margin: 2px 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.secilen {
+    background-color: green;
+    color: azure;
+}
+
+.oyun {
+    width: 1000px;
+    height: 500px;
+}
+
+#teklif {
+    background-color: darksalmon;
+    width: 375px;
+    height: 30px;
+    border: 2px black solid;
+    float: left;
+    margin: 2px 3px;
+}
+
+.sagtaraf {
+    float: right;
+    width: 350px;
+    height: 450px;
+    background-color: darkseagreen;
+}
