@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="">
+
+    </div>
+    <script>
+        var liste = [2, 4, 5, 11, 13, 22, 7, 32, 16, 17, 6, 1, 4, 9, 3, 8, 5, 26];
+
+        var mak = liste[0];
+        var min = liste[0];
+
+        for (i = 0; i < liste.length; i++) {
+            if (liste[i] > mak) {
+                mak = liste[i];
+            }
+            if (liste[i] < min) {
+                min = liste[i];
+            }
+        }
+        alert('min=' + min + 'mak=' + mak);
+    </script>
+</body>
+
+</html>
