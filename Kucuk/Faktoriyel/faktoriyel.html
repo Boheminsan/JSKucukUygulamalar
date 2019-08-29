@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faktöriyel</title>
+</head>
+
+<body>
+    <input id="sayi" type="text">
+    <button onclick="faktoriyel('sayi')">Faktöriyel</button>
+    <script>
+        function faktoriyel(sayi2) {
+            var sayi = document.getElementById(sayi2).value;
+            if (sayi >= 0) {
+                var carpan = 1;
+                for (i = 2; i <= sayi; i++) {
+                    carpan *= i;
+                }
+                alert(carpan);
+            }
+        }
+    </script>
+</body>
+
+</html>
