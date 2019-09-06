@@ -1,11 +1,11 @@
 # Javascript ile ufak tefek denemeler
  Javascript öğrenirken yaptığım projeler.
  [Şurada](https://www.yazilimbilisim.net/javascript/javascript-ornekleri/) uygulayacak epey proje buldum.
- 
  Projelerin içeriğine bakmadan isimlerine bakıp "Ben nasıl yaparım bunu?" diye düşünerek kendim yapmaya çalıştım.
  
  İlk 9 projeyi bitirdim ve bunları paylaşmak istedim.
- 
+ [Blog](http://batuhanaktas.blogspot.com/2019/09/javascript-uygulamalar.html)
+
 ## 1. Pisagor Hesaplama
 Alttaki TextBox'lardan ilk ikisine girdiğiniz uzunluklara Pisagor Teoremini uygulayıp üçüncüsünü hesaplar ve dik üçgeni çizer.
 
