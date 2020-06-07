@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="kenar1" placeholder="Taban Uzunluğunu Girin">
+    <input type="text" id="kenar2" placeholder="Yüksekliği Girin">
+    <p id="sonuc"> </p>
+    <input type="button" value="Hesapla" id="hesapla" onclick="hesapla()">
+
+    <script>
+        function hesapla() {
+            var taban = parseFloat(document.getElementById("kenar1").value);
+            var yukseklik = parseFloat(document.getElementById("kenar2").value);
+            document.getElementById("sonuc").innerHTML = taban * yukseklik / 2;
+        }
+    </script>
+</body>
+
+</html>

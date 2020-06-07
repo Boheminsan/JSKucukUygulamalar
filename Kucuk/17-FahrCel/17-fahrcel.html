@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" name="meters" id="fhrr">
+    <label for="fhr">Fahrenheit</label><br>
+
+    <input type="radio" name="meters" id="celr">
+    <label for="cel">Celcius</label><br>
+
+    <input type="text" id="input">
+    <label for="input">İnput</label><br>
+    <input type="button" value="Hesapla" onclick="hesapla()">
+
+    <p id="sonuc"></p> <br>
+    <script>
+        function hesapla() {
+            var fhrch = document.getElementById("fhrr").checked;
+            var celch = document.getElementById("celr").checked;
+
+            if (celch == true) {
+                var cel = document.getElementById("input").value;
+                var fhr = (parseFloat(cel) - 32) * (5 / 9);
+                document.getElementById("sonuc").innerHTML = fhr + " fahrenheit";
+
+            } else if (fhrch == true) {
+                var fhr = document.getElementById("input").value;
+                var cel = (parseFloat(fhr) * (9 / 5)) + 32;
+                document.getElementById("sonuc").innerHTML = cel + " celcius";
+            } else {
+                document.getElementById("sonuc").innerHTML = "Bir hata oluştu!";
+            }
+        }
+    </script>
+</body>
+
+</html>
