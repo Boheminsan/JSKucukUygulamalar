@@ -5,19 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arama</title>
+    <script src="ara.js"></script>
 </head>
 
 <body>
     <p id="serdu">Serdümen Er Batuhan Aktaş</p>
     <button onclick="Ara()">Bul</button>
     <p id="arakonum"></p>
-    <script>
-        function Ara() {
-            var str = document.getElementById("serdu").innerHTML;
-            var konum = str.search("B");
-            document.getElementById("arakonum").innerHTML = konum;
-        }
-    </script>
 </body>
 
 </html>

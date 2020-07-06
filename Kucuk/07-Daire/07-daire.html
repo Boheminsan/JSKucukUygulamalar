@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daire</title>
+    <script src="daire.js"></script>
 </head>
 
 <body>
@@ -17,19 +18,7 @@
         <button onclick="alanhesapla('yaricap')"> Alan Hesapla</button>
         <button onclick="cevrehesapla('yaricap')"> Çevre Hesapla</button>
     </div>
-    <script>
-        function alanhesapla(yaricap2) {
-            var yaricap = document.getElementById(yaricap2).value;
-            var alan = Math.PI * Math.pow(yaricap, 2);
-            alert("Alanı:\n" + alan);
-        }
-
-        function cevrehesapla(yaricap2) {
-            var yaricap = document.getElementById(yaricap2).value;
-            var cevre = 2 * Math.PI * (yaricap);
-            alert("Çevresi:\n" + cevre);
-        }
-    </script>
+    
 </body>
 
 </html>

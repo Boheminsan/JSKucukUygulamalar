@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="for.js"></script>
+    <style>
+        .pyaz {
+            width: 100px;
+            float: left;
+            background-color: burlywood;
+            height: auto;
+        }
+        
+        .dikdortgen {
+            width: 600px;
+            height: 700px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body onload="degistir()">
+    <div class="pyaz">
+        <p id="yazdir"></p>
+    </div>
+    <div class="pyaz">
+        <p id="yazdir2"></p>
+    </div>
+    <div style="width:100px; float:left; height: auto; background-color: cornflowerblue;" class="pyaz2">
+        <p id="yazdir3"></p>
+    </div>
+    <div class="pyaz">
+        <p id="yazdir4"></p>
+    </div>
+    <div style="height:auto; float:left;">
+        <label for="metin">Yazılacak Metin:</label>
+        <input type="text" id="metin"><br>
+        <label for="kackere">Kaç Defa Yazdırılsın:</label>
+        <input type="number" id="kackere"><br>
+        <label for="buyut">Büyüterek Yazdır (max.6 defa)</label>
+        <input type="checkbox" id="buyut" onclick="farkliyazdir()"><br>
+        <button onclick="yazdirgelsin()">Ekrana Yazdır</button>
+        <button onclick="yazdirgelsin2()">Ekrana Yazdır2</button>
+        <p id="yazdir5"></p>
+    </div>
+
+
+</body>
+
+</html>

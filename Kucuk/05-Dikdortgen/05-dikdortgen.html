@@ -6,35 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dikdörtgen</title>
+    <script src="dik.js"></script>
 </head>
 
 <body>
     <div>
-        <h4>Uzun Kenar:</h4>
-        </br>
+        <p>Uzun Kenar:</p>
         <input id="uzun" type="text">
-        <h4>Kısa Kenar:</h4>
-        </br>
+        <p>Kısa Kenar:</p>
         <input id="kisa" type="text">
         </br>
         <button onclick="alanhesapla('uzun','kisa')"> Alan Hesapla</button>
         <button onclick="cevrehesapla('uzun','kisa')"> Çevre Hesapla</button>
     </div>
-    <script>
-        function alanhesapla(uzun2, kisa2) {
-            var uzun = document.getElementById(uzun2).value;
-            var kisa = document.getElementById(kisa2).value;
-            var alan = uzun * kisa;
-            alert("Alanı:\n" + alan);
-        }
 
-        function cevrehesapla(uzun2, kisa2) {
-            var uzun = document.getElementById(uzun2).value;
-            var kisa = document.getElementById(kisa2).value;
-            var cevre = 2 * (+uzun + +kisa);
-            alert("Çevresi:\n" + cevre);
-        }
-    </script>
 </body>
 
 </html>

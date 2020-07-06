@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="radioort.js"></script>
+</head>
+
+<body>
+    <input type="radio" name="islem" id="topla">
+    <label for="topla">Topla</label><br>
+    <input type="radio" name="islem" id="cikar">
+    <label for="cikar">Çıkar</label><br>
+    <input type="radio" name="islem" id="carp">
+    <label for="carp">Çarp</label><br>
+    <input type="radio" name="islem" id="bol">
+    <label for="bol">Böl</label><br>
+
+    <input type="text" id="sayi1" oninput="hesapla()">
+    <input type="text" id="sayi2" oninput="hesapla()">
+
+    <input type="button" value="Hesapla" onclick="hesapla()">
+    <h3 id="sonuc">Sonuç:</h3>
+</body>
+
+</html>
